@@ -1,0 +1,8 @@
+function whatToWithCell(n, cell) {
+
+if(n < 2) cell = 0;
+if(n == 2) cell = cell;
+if(n == 3) cell = 1;
+if(n > 3) cell = 0;
+
+}
