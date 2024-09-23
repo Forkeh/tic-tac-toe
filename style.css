@@ -1,0 +1,13 @@
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    gap: 0.5rem;
+    margin: 2rem;
+}
+
+.cell {
+    padding: 1rem;
+    background-color: antiquewhite;
+    font-size: larger;
+    font-weight: 800;
+}
