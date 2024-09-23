@@ -22,6 +22,18 @@ function dump() {
     console.table(grid);
 }
 
-// TODO: check for winner function - isWinner
+function isThereWinner(player) {
+    // Horizontal
+    if (grid[0][0] === player && grid[0][1] === player && grid[0][2] === player) return true;
+    if (grid[1][0] === player && grid[1][1] === player && grid[1][2] === player) return true;
+    if (grid[2][0] === player && grid[2][1] === player && grid[2][2] === player) return true;
+    // Vertical
+    if (grid[0][0] === player && grid[1][0] === player && grid[2][0] === player) return true;
+    if (grid[0][1] === player && grid[1][1] === player && grid[2][1] === player) return true;
+    if (grid[0][2] === player && grid[1][2] === player && grid[2][2] === player) return true;
+    // Diagonally
+    if (grid[0][0] === player && grid[1][1] === player && grid[2][2] === player) return true;
+    if (grid[2][0] === player && grid[1][1] === player && grid[0][2] === player) return true;
+}
 
-export { init, readFromCell, writeToCell, dump };
+export { init, readFromCell, writeToCell, dump, isThereWinner };
