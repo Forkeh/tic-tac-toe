@@ -1,3 +1,7 @@
+body {
+    background-color: azure;
+}
+
 #board {
     display: grid;
     grid-template-columns: repeat(3, max-content);
@@ -10,4 +14,6 @@
     background-color: antiquewhite;
     font-size: larger;
     font-weight: 800;
+    border: 4px outset lightgoldenrodyellow;
+    cursor: pointer;
 }
