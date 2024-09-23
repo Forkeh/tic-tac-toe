@@ -1,6 +1,6 @@
-const row1 = [1, 2, 3];
-const row2 = [4, 5, 6];
-const row3 = [7, 8, 9];
+const row1 = [0, 0, 0];
+const row2 = [0, 0, 0];
+const row3 = [0, 0, 0];
 
 const grid = [row1, row2, row3];
 
@@ -17,16 +17,11 @@ function readFromCell(row, col) {
 }
 
 function dump() {
-    // for (let i = 0; i < grid.length; i++) {
-    //     const row = grid[i];
-    //     for (let j = 0; j < row.length; j++) {
-    //         const element = row[j];
-    //         console.log(element);
-    //     }
-    // }
     console.log("-------- GAME GRID --------");
 
     console.table(grid);
 }
+
+// TODO: check for winner function - isWinner
 
 export { init, readFromCell, writeToCell, dump };
